@@ -1,0 +1,50 @@
+{
+    "name": "bardoqi/php-hive-queue",
+    "description": "$queue->push('I can be popped off after', '10 minutes');",
+    "keywords": ["queue", "schedule", "priority", "delayed", "mongodb", "redis", "tarantool", "beanstalk", "sysv", "postgres", "mysql", "sqlite", "pdo"],
+    "homepage": "https://github.com/bardoqi/php-hive-queue",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eugene Leonovich",
+            "email": "gen.work@gmail.com"
+        },
+        {
+            "name": "Bardo QI",
+            "email": "bardoqi@gmail.com"
+        },
+    ],
+    "require": {
+        "php": "^5.4|^7.0"
+    },
+    "require-dev": {
+        "pda/pheanstalk": "~3.0"
+    },
+    "suggest": {
+        "ext-mongo":      ">=1.3.0",
+        "ext-phpredis":   ">=2.2.3",
+        "ext-tarantool":  "",
+        "ext-pdo":        "",
+        "ext-pdo_mysql":  "",
+        "ext-pdo_pgsql":  "",
+        "ext-pdo_sqlite": "",
+        "ext-sysvmsg":    "",
+        "pda/pheanstalk": ">=3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phive\\Queue\\": "src/"
+        }
+    },
+    "autoload-dev" : {
+        "psr-4": {
+            "Phive\\Queue\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
